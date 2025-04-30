@@ -422,6 +422,8 @@ spec:
     metadata:
       labels:
         app: redis-cart
+      annotations:
+        consul.hashicorp.com/connect-inject: 'true'
     spec:
       containers:
       - name: redis
